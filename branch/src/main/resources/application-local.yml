@@ -28,6 +28,10 @@ spring:
       enabled: true
       max-file-size: 1000MB
       max-request-size: 1000MB
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: test-topic-group-01
 
 cloud:
   aws:
