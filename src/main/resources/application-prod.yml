@@ -1,0 +1,60 @@
+
+server:
+  port: 8080
+  server:
+
+
+spring:
+  config:
+    activate:
+      on-profile: local
+  redis:
+    host: localhost
+    port: 6379
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/careup
+    username: root
+    password: 1234
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show_sql: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+
+cloud:
+  aws:
+    credentials:
+      access-key: xxxxxxxxxxxxx
+      secret-key: yyyyyyyyyyyyyy
+    region:
+      static: ap-northeast-2
+    s3:
+      bucket: xxxxxxxxxxxxx
+
+jwt:
+  accessTokenExpiryMinutes: 30 # 30분
+  secretKeyAt: YmV5b25kYWNjZXNzdG9rZW5zZWNyZXRrZXliZXlvbmRhY2Nlc3N0b2tlbnNlY3JldGtleWJleW9uZGFjY2Vzc3Rva2Vuc2VjcmV0a2V5
+  #  refreshTokenExpiryDays: 180 # 180일
+  refreshTokenExpiryDaysPersistent: 180 # 180일 (자동 로그인 O)
+  refreshTokenExpiryDaysNonPersistent: 1 # 1일 (자동 로그인 X)
+  secretKeyRt: YmV5b25kYWNjZXNzdG9rZW5zZWNyZXRrZXliZXlvbmRhY2Nlc3N0b2tlbnNlY3JldGtleWJleW9uZGFjY2Vzc3Rva2Vuc2VjcmV0a2V5
+
+security:
+  csrf:
+    allowed-origins:
+      - "http://localhost:3000"
+    skip-paths:
+      - "/health"
+
+logging:
+  level:
+    root: info
+
