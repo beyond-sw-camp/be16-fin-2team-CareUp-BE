@@ -1,10 +1,15 @@
 
 server:
-  port: 8081
-  server:
+  port: 0
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 spring:
+  application:
+    name: branch-service
   config:
     activate:
       on-profile: local
@@ -57,7 +62,7 @@ security:
       - "http://localhost:3000"
     skip-paths:
       - "/health"
-
+      -
 logging:
   level:
     root: info
