@@ -13,7 +13,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 @RequiredArgsConstructor
 @EnableWebSocketMessageBroker
 public class StompWebSocketConfig implements WebSocketMessageBrokerConfigurer {
-    private final StompHandler stompHandler;
+//    private final StompHandler stompHandler;
 
     //프론트랑 연결 설절 하는 부분
     @Override
@@ -39,7 +39,7 @@ public class StompWebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureClientInboundChannel(ChannelRegistration registration) {
-        registration.interceptors(stompHandler);
+//        registration.interceptors(stompHandler);
     }
 
 }

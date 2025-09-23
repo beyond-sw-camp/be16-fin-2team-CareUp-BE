@@ -14,7 +14,7 @@ import java.util.Map;
 @EnableKafka
 @Configuration
 public class KafkaConsumerConfig {
-    private static final String END_POINT = "127.0.0.1:9092";
+    private static final String END_POINT = "localhost:9092";
 
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String,String> kafkaListenerContainerFactory(){

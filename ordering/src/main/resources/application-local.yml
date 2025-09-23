@@ -1,10 +1,15 @@
 
 server:
-  port: 8080
-  server:
+  port: 0
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 spring:
+  application:
+    name: ordering-service
   config:
     activate:
       on-profile: local
@@ -53,7 +58,7 @@ security:
       - "http://localhost:3000"
     skip-paths:
       - "/health"
-
+      -
 logging:
   level:
     root: info
