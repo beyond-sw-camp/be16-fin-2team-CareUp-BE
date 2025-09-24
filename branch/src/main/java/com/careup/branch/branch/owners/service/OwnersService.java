@@ -1,12 +1,12 @@
 package com.careup.branch.branch.owners.service;
 
 import com.careup.branch.branch.owners.repository.OwnersRepository;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Transactional
 public class OwnersService {
 
