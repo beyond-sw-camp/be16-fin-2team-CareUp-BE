@@ -1,6 +1,6 @@
-package com.careup.ordering.product.entity;
+package com.careup.ordering.ordering.product.entity;
 
-import com.careup.ordering.order.entity.Cart;
+import com.careup.ordering.ordering.order.entity.Cart;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

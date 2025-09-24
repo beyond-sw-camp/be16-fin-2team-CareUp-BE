@@ -5,21 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7371932e-0a92-419e-95cd-b344a6a03f7f" name="변경" comment="feat: BaseTimeEntity 생성">
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/member/entity/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/member/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderedItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/payment/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/payment/entity/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/BranchProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/InventoryFlowDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/ProductAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/ProductStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/InquiryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/InquiryType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductInquiry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/common/BaseTimeEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/member/entity/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/member/entity/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/member/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/OrderType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderedItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/OrderedItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/member/.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/payment/.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/payment/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/payment/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/payment/entity/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/payment/entity/PaymentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/BranchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/BranchProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/InventoryFlowDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/InventoryFlowDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/ProductAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/ProductStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +59,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Enum" />
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -80,6 +89,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.branch [:com.careup.branch.BranchApplication.main()].executor": "Run",
+    "Gradle.ordering [:com.careup.ordering.OrderingApplication.main()].executor": "Run",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "feat/productentity"
   }

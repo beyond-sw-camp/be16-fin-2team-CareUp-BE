@@ -1,6 +1,6 @@
-package com.careup.ordering.payment.entity;
+package com.careup.ordering.ordering.payment.entity;
 
-import com.careup.ordering.order.entity.Order;
+import com.careup.ordering.ordering.order.entity.Order;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

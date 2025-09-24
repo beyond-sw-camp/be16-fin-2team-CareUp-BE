@@ -1,7 +1,7 @@
-package com.careup.ordering.member.entity;
+package com.careup.ordering.ordering.member.entity;
 
 
-import com.careup.ordering.common.BaseTimeEntity;
+import com.careup.ordering.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

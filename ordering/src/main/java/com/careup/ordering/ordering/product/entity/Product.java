@@ -1,6 +1,6 @@
-package com.careup.ordering.product.entity;
+package com.careup.ordering.ordering.product.entity;
 
-import com.careup.ordering.common.BaseTimeEntity;
+import com.careup.ordering.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -51,7 +51,7 @@ public class Product extends BaseTimeEntity {
     private LocalDateTime deleteAt;
 
     @OneToMany(mappedBy = "product",cascade = CascadeType.ALL)
-    private List<com.careup.ordering.product.entity.ProductAttribute> attributes = new ArrayList<>();
+    private List<ProductAttribute> attributes = new ArrayList<>();
 
     @Builder
     public Product(Category category, String name, String description,

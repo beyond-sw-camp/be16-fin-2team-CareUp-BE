@@ -1,4 +1,4 @@
-package com.careup.ordering.product.entity;
+package com.careup.ordering.ordering.product.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
