@@ -1,4 +1,4 @@
-package com.careup.branch.employee.entity;
+package com.careup.branch.branch.employee.entity;
 
 import com.careup.branch.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
