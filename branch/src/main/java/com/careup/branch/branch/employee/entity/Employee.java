@@ -3,9 +3,7 @@ package com.careup.branch.branch.employee.entity;
 import com.careup.branch.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -13,6 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Getter
 public class Employee extends BaseTimeEntity {
 
     @Id

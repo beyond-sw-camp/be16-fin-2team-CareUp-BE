@@ -25,7 +25,6 @@ public class ChatMessage extends BaseTimeEntity {
     @JoinColumn(name="chat_room_id", nullable = false)
     private ChatRoom chatRoom;
 
-
 // todo : 추후에 수정할 것
 //    private Member member;
 

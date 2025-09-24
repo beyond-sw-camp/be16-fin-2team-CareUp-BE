@@ -24,7 +24,7 @@ public class ChatRoom extends BaseTimeEntity {
     @Enumerated(EnumType.STRING)
     private ChatRoomType chatRoomType;
 
-    private String chatRoomName;
+    private String address;
 
     @OneToMany(mappedBy = "chatRoom", cascade = CascadeType.REMOVE, orphanRemoval = true)
     @Builder.Default
@@ -37,4 +37,5 @@ public class ChatRoom extends BaseTimeEntity {
     public void addMessage(ChatMessage chatMessage) {
         this.chatMessageList.add(chatMessage);
     }
+    public void addAddress(String address){this.address = address;}
 }
