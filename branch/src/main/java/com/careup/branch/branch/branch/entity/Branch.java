@@ -54,7 +54,7 @@ public class Branch extends BaseTimeEntity {
 
     private String addressDetail; // 지점 상세 주소
 
-    @Column(columnDefinition = "TEXT", nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String profileImageUrl; // 지점 프로필 이미지
 
     @Column(length = 32, nullable = false)
