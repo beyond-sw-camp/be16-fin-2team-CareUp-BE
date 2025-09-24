@@ -1,7 +1,6 @@
-package com.careup.branch.employee.service;
+package com.careup.branch.branch.employee.service;
 
-import com.careup.branch.employee.repository.EmployeeRepository;
-import lombok.AllArgsConstructor;
+import com.careup.branch.branch.employee.repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

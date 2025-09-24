@@ -1,6 +1,6 @@
-package com.careup.branch.employee.controller;
+package com.careup.branch.branch.employee.controller;
 
-import com.careup.branch.employee.repository.EmployeeRepository;
+import com.careup.branch.branch.employee.repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
