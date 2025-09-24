@@ -4,31 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7371932e-0a92-419e-95cd-b344a6a03f7f" name="변경" comment="feat: BaseTimeEntity 생성">
+    <list default="true" id="7371932e-0a92-419e-95cd-b344a6a03f7f" name="변경" comment="fix:파일 경로 이전">
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/Coupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/CouponList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/CouponStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/CouponType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/InquiryStatus.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/InquiryType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductInquiry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductInquiryAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductViewLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/Promotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/PromotionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/common/BaseTimeEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/member/entity/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/member/entity/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/member/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/OrderType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/order/entity/OrderedItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/entity/OrderedItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/member/.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/order/.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/payment/.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/payment/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/payment/entity/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/payment/entity/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/payment/entity/PaymentStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/BranchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/BranchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/InventoryFlowDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/InventoryFlowDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/ProductAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/product/entity/ProductStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/ordering/src/main/java/com/careup/ordering/ordering/product/entity/ProductStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +49,8 @@
       <list>
         <option value="Record" />
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,12 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1758681985033</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix:파일 경로 이전">
+      <option name="closed" value="true" />
+      <created>1758690349114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758690349114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: text제거" />
     <MESSAGE value="feat: BaseTimeEntity 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: BaseTimeEntity 생성" />
+    <MESSAGE value="fix:파일 경로 이전" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:파일 경로 이전" />
   </component>
 </project>
