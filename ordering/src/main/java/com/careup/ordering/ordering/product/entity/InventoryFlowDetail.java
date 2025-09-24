@@ -24,10 +24,10 @@ public class InventoryFlowDetail {
     @JoinColumn(name = "branch_products_id",nullable = false)
     private BranchProduct branchProduct;
 
-    @Column(name = "in")
+    @Column(name = "`in`")  // 백틱으로 감싸기
     private Long inQuantity;
 
-    @Column(name = "out")
+    @Column(name = "`out`")  // 백틱으로 감싸기
     private Long outQuantity;
 
     @Column(name = "create_at",nullable = false)
