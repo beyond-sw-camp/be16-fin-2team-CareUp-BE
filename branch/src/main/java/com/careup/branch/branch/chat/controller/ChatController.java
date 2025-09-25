@@ -32,7 +32,7 @@ public class ChatController {
     //채팅방 가입
     @GetMapping("/join/chatRoom")
     public ResponseEntity<?> joinChatRoom(@RequestParam Long chatRoomId){
-        chatService.joinChatRoom(chatRoomId);
+        chatService.joinGroupChatRoom(chatRoomId);
         return new ResponseEntity<>(new CommonSuccessDto("", HttpStatus.ACCEPTED.value(), "채팅방 가입 완료"), HttpStatus.ACCEPTED);
     }
 

@@ -1,13 +1,16 @@
 package com.careup.branch.branch.chat.domain;
 
-import com.careup.branch.branch.employee.entity.Employee;
-import com.careup.branch.branch.owners.entity.Owners;
+import com.careup.branch.branch.employee.domain.Employee;
+import com.careup.branch.branch.owner.domain.Owner;
 import com.careup.branch.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -28,6 +31,10 @@ public class ChatParticipant extends BaseTimeEntity {
     private ChatRoom chatRoom;
     private boolean exitYn;
 
+    @OneToMany(mappedBy = "chatParticipant", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @Builder.Default
+    private List<ChatReadStatus> chatReadStatusList = new ArrayList<>();
+
     public ChatParticipant fromEmployee(Employee employee){
         return ChatParticipant.builder()
                 .name(employee.getName())
@@ -36,11 +43,19 @@ public class ChatParticipant extends BaseTimeEntity {
                 .build();
     }
 
-    public ChatParticipant fromOwner(Owners owner) {
+    public ChatParticipant fromOwner(Owner owner) {
         return ChatParticipant.builder()
                 .name(owner.getName())
                 .email(owner.getEmail())
                 .memberType(MemberType.OWNER)
+                .build();
+    }
+
+    public ChatParticipant fromChatRoomAndOwner(ChatRoom chatRoom, Owner owner) {
+        return ChatParticipant.builder()
+                .name(owner.getName())
+                .email(owner.getEmail())
+                .chatRoom(chatRoom)
                 .build();
     }
 }

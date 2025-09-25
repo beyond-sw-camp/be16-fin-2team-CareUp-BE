@@ -1,9 +1,10 @@
-package com.careup.branch.branch.branch.entity;
+package com.careup.branch.branch.branch.domain;
 
 import com.careup.branch.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Getter
 public class Branch extends BaseTimeEntity {
 
     @Id

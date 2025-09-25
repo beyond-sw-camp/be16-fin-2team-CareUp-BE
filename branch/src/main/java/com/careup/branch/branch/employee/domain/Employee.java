@@ -1,8 +1,7 @@
-package com.careup.branch.branch.employee.entity;
+package com.careup.branch.branch.employee.domain;
 
 import com.careup.branch.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
 import lombok.*;
 
 import java.time.LocalDate;

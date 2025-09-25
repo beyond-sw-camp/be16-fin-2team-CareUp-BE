@@ -1,7 +1,7 @@
-package com.careup.branch.branch.owners.entity;
+package com.careup.branch.branch.owner.domain;
 
 import com.careup.branch.common.domain.BaseTimeEntity;
-import com.careup.branch.branch.employee.entity.Gender;
+import com.careup.branch.branch.employee.domain.Gender;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 @Getter
-public class Owners extends BaseTimeEntity {
+public class Owner extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

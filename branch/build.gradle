@@ -52,6 +52,9 @@ dependencies {
 	//    eureka client의존성 추가
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 
+	//feign 클라이언트
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
 }
 dependencyManagement{
 	imports{
