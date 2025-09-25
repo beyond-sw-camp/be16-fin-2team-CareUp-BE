@@ -1,4 +1,4 @@
-package com.careup.branch.purchaseOrder.entity;
+package com.careup.branch.domain.purchaseOrder.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
