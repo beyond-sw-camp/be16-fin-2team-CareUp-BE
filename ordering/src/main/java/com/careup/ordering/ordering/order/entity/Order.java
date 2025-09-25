@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "`order`")  // 백틱으로 감싸서 SQL 예약어 피하기
+@Table(name = "orders")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
