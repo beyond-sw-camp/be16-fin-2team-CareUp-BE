@@ -1,5 +1,6 @@
 package com.careup.branch.domain.branch.entity;
 
+
 import com.careup.branch.common.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

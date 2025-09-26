@@ -22,13 +22,19 @@ public class ChatReadStatus extends BaseTimeEntity {
     @JoinColumn(name="chat_room_id", nullable = false)
     private ChatRoom chatRoom;
 
-//    private User user;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="chat_participant_id", nullable = false)
+    private ChatParticipant chatParticipant;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "chat_message_id", nullable = false)
     private ChatMessage chatMessage;
 
     private Boolean isRead;
+
+    public void readMessage(){
+        this.isRead = true;
+    }
 
 
 }

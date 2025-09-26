@@ -1,0 +1,40 @@
+package com.careup.branch.domain.notification.domain;
+
+public enum NotificationAction {
+    // ATTENDANCE
+    CHECK_IN,
+    CHECK_OUT,
+
+    // SCHEDULE
+    SCHEDULE_CREATED,
+    SCHEDULE_UPDATED,
+    SCHEDULE_CANCELLED,
+
+    // STOCK
+    STOCK_LOW,
+    STOCK_OUT,
+    STOCK_REPLENISHED,
+
+    // CUSTOMER
+    CUSTOMER_REGISTERED,
+    CUSTOMER_UPDATED,
+    CUSTOMER_DELETED,
+
+    // ORDER
+    ORDER_PLACED,
+    ORDER_CANCELLED,
+    ORDER_COMPLETED,
+    ORDER_REFUNDED,
+
+    // ANNOUNCEMENT
+    ANNOUNCEMENT_CREATED,
+    ANNOUNCEMENT_UPDATED,
+
+    // CHAT
+    MESSAGE_RECEIVED,
+    MESSAGE_READ,
+
+    // ETC
+    ETC
+}
+
