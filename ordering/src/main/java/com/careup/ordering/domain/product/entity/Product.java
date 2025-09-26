@@ -47,8 +47,8 @@ public class Product extends BaseTimeEntity {
     @Column(name = "status",nullable = false)
     private ProductStatus status = ProductStatus.ACTIVE;
 
-    @Column(name = "deleted_at")
-    private LocalDateTime deleteAt;
+    @Column(name = "is_del_yn", nullable = false, length = 1)
+    private String isDelYn = "N";
 
     @OneToMany(mappedBy = "product",cascade = CascadeType.ALL)
     private List<ProductAttribute> attributes = new ArrayList<>();
