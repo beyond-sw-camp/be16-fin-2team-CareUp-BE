@@ -1,15 +1,16 @@
 package com.careup.branch.domain.notification.service;
 
-import com.careup.branch.branch.chat.domain.MemberType;
-import com.careup.branch.branch.employee.domain.Employee;
-import com.careup.branch.branch.employee.repository.EmployeeRepository;
-import com.careup.branch.branch.owner.domain.Owner;
-import com.careup.branch.branch.owner.repository.OwnerRepository;
+
+import com.careup.branch.domain.chat.entity.MemberType;
+import com.careup.branch.domain.employee.entity.Employee;
+import com.careup.branch.domain.employee.repository.EmployeeRepository;
 import com.careup.branch.domain.notification.domain.Notification;
 import com.careup.branch.domain.notification.domain.NotificationAction;
 import com.careup.branch.domain.notification.domain.NotificationType;
 import com.careup.branch.domain.notification.dto.NotificationListResDto;
 import com.careup.branch.domain.notification.repository.NotificationRepository;
+import com.careup.branch.domain.owner.entity.Owner;
+import com.careup.branch.domain.owner.repository.OwnerRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

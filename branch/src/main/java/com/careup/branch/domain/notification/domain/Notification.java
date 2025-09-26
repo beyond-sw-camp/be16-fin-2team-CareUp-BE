@@ -1,7 +1,7 @@
 package com.careup.branch.domain.notification.domain;
 
-import com.careup.branch.branch.chat.domain.MemberType;
 import com.careup.branch.common.domain.BaseTimeEntity;
+import com.careup.branch.domain.chat.entity.MemberType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
