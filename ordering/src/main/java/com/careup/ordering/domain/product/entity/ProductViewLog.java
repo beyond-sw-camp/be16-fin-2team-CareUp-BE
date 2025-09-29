@@ -21,9 +21,8 @@ public class ProductViewLog {
     @Column(name = "product_view_log_id")
     private Long productViewLogId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "branch_product_id", nullable = false)
-    private BranchProduct branchProduct;
+    private Long branchProductId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id",nullable = false)
@@ -36,9 +35,9 @@ public class ProductViewLog {
     private BigDecimal repeatPurchaseRate;
 
     @Builder
-    public ProductViewLog(BranchProduct branchProduct,Member member,
+    public ProductViewLog(long branchProductId,Member member,
                           Long viewCount,BigDecimal repeatPurchaseRate){
-        this.branchProduct = branchProduct;
+        this.branchProductId = branchProductId;
         this.member = member;
         this.viewCount = viewCount;
         this.repeatPurchaseRate = repeatPurchaseRate;

@@ -22,9 +22,8 @@ public class ProductInquiryAnswer {
     @JoinColumn(name = "inquiry_id",nullable = false)
     private ProductInquiry inquiry;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "branch_product_id", nullable = false)
-    private BranchProduct branchProduct;
+    @JoinColumn(name = "product_id", nullable = false)
+    private Long productId;
 
     @Column(name = "content", nullable = false, columnDefinition = "TEXT")
     private String content;
@@ -33,10 +32,10 @@ public class ProductInquiryAnswer {
     private String employeeId; // Branch 서비스의 Employee 참조
 
     @Builder
-    public ProductInquiryAnswer(ProductInquiry inquiry, BranchProduct branchProduct,
+    public ProductInquiryAnswer(ProductInquiry inquiry, Long productId,
                                 String content, String employeeId) {
         this.inquiry = inquiry;
-        this.branchProduct = branchProduct;
+        this.productId = productId;
         this.content = content;
         this.employeeId = employeeId;
     }

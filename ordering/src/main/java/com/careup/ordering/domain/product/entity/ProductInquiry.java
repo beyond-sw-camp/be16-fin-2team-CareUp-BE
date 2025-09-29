@@ -21,9 +21,8 @@ public class ProductInquiry extends BaseTimeEntity {
     @JoinColumn(name = "member_id", nullable = false)
     private Member member;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "branch_products_id", nullable = false)
-    private BranchProduct branchProduct;
+    @JoinColumn(name = "product_id", nullable = false)
+    private Long productId;
 
     @Column(name = "title", nullable = false, length = 100)
     private String title;
@@ -46,10 +45,10 @@ public class ProductInquiry extends BaseTimeEntity {
     private List<ProductInquiryAnswer> answers = new ArrayList<>();
 
     @Builder
-    public ProductInquiry(Member member, BranchProduct branchProduct, String title,
+    public ProductInquiry(Member member, long productId, String title,
                           String content, InquiryType inquiryType, Boolean isSecret) {
         this.member = member;
-        this.branchProduct = branchProduct;
+        this.productId = productId;
         this.title = title;
         this.content = content;
         this.inquiryType = inquiryType;

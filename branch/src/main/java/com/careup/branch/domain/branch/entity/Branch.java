@@ -74,4 +74,13 @@ public class Branch extends BaseTimeEntity {
 
     @Column(length = 200)
     private String remark; // 비고
+
+    @Column(length = 100, nullable = false)
+    private String attorney_name; // 대리인명
+
+    @Column(length = 32, nullable = false)
+    private String attorneyPhoneNumber; // 대리인 연라겇
+
+
+
 }

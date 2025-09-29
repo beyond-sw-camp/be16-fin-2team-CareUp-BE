@@ -38,6 +38,15 @@ dependencies {
 	//    eureka client의존성 추가
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 
+	//kafka
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation "org.springframework.kafka:spring-kafka:3.2.4"
+	//websocket 의존성
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+	//redis 의존성
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
 }
 
 dependencyManagement{
