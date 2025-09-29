@@ -13,5 +13,4 @@ public class OwnerService {
 
     private final OwnerRepository ownerRepository;
 
-//    TODO: 여기서부터 서비스 코드 작성
 }
