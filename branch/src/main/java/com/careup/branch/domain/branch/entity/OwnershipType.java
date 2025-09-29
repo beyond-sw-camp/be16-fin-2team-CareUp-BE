@@ -1,5 +1,5 @@
 package com.careup.branch.domain.branch.entity;
 
-public enum OwnershipType {
+public enum  OwnershipType {
     YES, NO
 }
