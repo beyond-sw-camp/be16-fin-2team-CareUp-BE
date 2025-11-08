@@ -14,11 +14,7 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import java.util.Arrays;
 
 @Configuration
 @EnableMethodSecurity
@@ -28,11 +24,10 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http,
                                                    JwtTokenFilter jwtTokenFilter,
                                                    JwtAuthenticationEntryPoint entryPoint,
-                                                   JwtAccessDeniedHandler deniedHandler,
-                                                   CorsConfigurationSource corsConfigurationSource
+                                                   JwtAccessDeniedHandler deniedHandler
     ) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable);
-        http.cors(c -> c.configurationSource(corsConfigurationSource));
+        http.cors(AbstractHttpConfigurer::disable);
         http.sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.authorizeHttpRequests(auth -> auth
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
@@ -89,25 +84,6 @@ public class SecurityConfig {
 
         http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
-    }
-
-    // ✅ 명시적 Bean + 도메인 변형(https/http, www 유무) 모두 허용
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList(
-                "http://localhost:5173",
-                "https://www.careup.store",
-                "https://careup.store",
-                "http://www.careup.store",
-                "http://careup.store"
-        ));
-        configuration.setAllowedMethods(Arrays.asList("*"));
-        configuration.setAllowedHeaders(Arrays.asList("*"));
-        configuration.setAllowCredentials(true);
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
     }
 
     @Bean

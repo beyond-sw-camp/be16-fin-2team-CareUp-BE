@@ -7,20 +7,9 @@ spring:
   cloud:
     gateway:
       # 글로벌 CORS (게이트웨이 전담)
-      globalcors:
-        add-to-simple-url-handler-mapping: true
-        cors-configurations:
-          '[/**]':
-            allowedOrigins:
-              - 'http://localhost:5173'
-              - 'http://localhost:3000'
-            allowedMethods: "*"
-            allowedHeaders: "*"
-            allowCredentials: true
+      # globalcors disabled for local testing
 
-      # 헤더 중복 제거 (multiple values 문제 방지)
-      default-filters:
-        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      # default-filters disabled for local testing
 
       routes:
         # 프리픽스 접근 유지
